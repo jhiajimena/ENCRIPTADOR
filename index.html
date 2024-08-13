@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/style.css">
     <link rel="preconnect" href="https://font.googleapis.com">
@@ -20,9 +21,9 @@
         <section class="presentacion_contenido">
             
                 
-                <textarea class="presentacion_texto" cols="10" rows="10" placeholder="Ingrese el texto aqui:"></textarea>
+                <textarea class="presentacion_texto" cols="30" rows="10" placeholder="Ingrese el texto aqui:"></textarea>
                 
-                <div class="presentacion_enlaces">
+                <div class="presentacion_alerta">
                     <img src="./assets/bi_exclamation-circle-fill.png">
                     <h6 class="mensaje_advertencia">
                         Solo letras minusculas y sin caracteres
@@ -30,26 +31,36 @@
 
                 </div>
                 <div class="presentacion_botones">
-                    <button class="boton">Encriptar</button>
-                    <button class="boton btn-desencriptar">Desencriptar</button>
+                    <button class="boton_encriptar" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="boton_desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
                 </div>
         </section>
         <section class="presentacion_rectangulo" >  
+            <div class="imagen">
             <img class="imagen_rectangulo" src="./assets/señorita.png" alt="descifrando">
+            </div>
             <div class="presentacion_rectangulo_texto">
-                <h3>Ningún mensaje fue encontrado</h3>
-                <h4>Ingrese el texto que desees encriptar o desencriptar</h4>
+                <textarea class="mensaje" cols="20" rows="10" readonly></textarea>
+                <h3 placeholder>Ningún mensaje fue encontrado</h3>
+                <p placeholder>Ingrese el texto que desees encriptar o desencriptar</p>
+            </div>
+            <div class="copy">
+                <button class="copiar" onclick="btnCopiar()">Copiar</button>  
+            </div>
+            <div class="presentacion_rectangulo_resultado">
+                <p class="mensaje"></p>
+
             </div>
         </section> 
-        <section class="presentacion_rectangulo_resultado">  
-            <textarea class="mensaje" cols="20" rows="10"></textarea>
+        <!-- <section class="presentacion_rectangulo_resultado">  
+            <!-- <textarea class="mensaje" cols="20" rows="10"></textarea> -->
             
             <!-- <div class="presentacion_rectangulo_texto">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste sint eum at consequuntur porro obcaecati nesciunt perferendis officiis, voluptate ea, odio corporis eligendi voluptatibus. Nemo, nam laborum? Voluptate, commodi unde.
                 </p>
             </div> -->
-            <button class="boton">Copiar</button>
-        </section> 
+
+        </section>
     </main>
     <footer class="footer">
         <p>Desarrollado por Pamela Lescano</p>
@@ -59,6 +70,6 @@
         </a>
 
     </footer>  
-    
+    <script src="/script.js"></script>  
 </body>
 </html>

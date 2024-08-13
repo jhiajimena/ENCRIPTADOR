@@ -1,5 +1,5 @@
 const textArea = document.querySelector(".presentacion_texto");
-const mensaje = documment.querySelector(".presentacion_rectangulo_texto");
+const mensaje = document.querySelector(".mensaje");
 
 // La letra "e" es convertida para "enter"
 // La letra "i" es convertida para "imes"
@@ -14,34 +14,37 @@ function btnEncriptar(){
 
 }
 function btnDesencriptar(){
-    const textoDesencriptado = Desencriptar(textArea.value)
+    const textoDesencriptado = desencriptar(textArea.value)
     mensaje.value = textoDesencriptado
     textArea.value="";
-    
-
 }
 
+function btnCopiar() {
+    const mensaje = document.querySelector(".mensaje");
+    navigator.clipboard.writeText(mensaje.value);
+}
 
 function encriptar(stringEncriptado){
-let matrizCodigo =(["a","ai"],["e","enter"],["i","imes"],["o","ober"],["u","ufat"]);
-stringEncriptado = stringEncriptado.tolowerCase()
+let matrizCodigo =[["e","enter"],["i","imes"],["a","ai"],["o","ober"],["u","ufat"]];
+stringEncriptado = stringEncriptado.toLowerCase()
 
 for(let i = 0;i< matrizCodigo.length;i++){
     if(stringEncriptado.includes(matrizCodigo[i][0])){
-        stringEncriptado= stringEncriptado.replaceall(matrizCodigo[i][0], matrizCodigo[i][1]);
+        stringEncriptado= stringEncriptado.replaceAll(matrizCodigo[i][0], matrizCodigo[i][1]);
         }
     }
     return stringEncriptado;
 }
 
 function desencriptar(stringDesencriptado){
-    let matrizCodigo =(["a","ai"],["e","enter"],["i","imes"],["o","ober"],["u","ufat"]);
-    stringDesencriptado = stringDesencriptado.tolowerCase()
+    let matrizCodigo =[["e","enter"],["i","imes"],["a","ai"],["o","ober"],["u","ufat"]];
+    stringDesencriptado = stringDesencriptado.toLowerCase()
     
     for(let i = 0;i< matrizCodigo.length;i++){
         if(stringDesencriptado.includes(matrizCodigo[i][1])){
-            stringDesencriptado= stringDesencriptado.replaceall(matrizCodigo[i][1], matrizCodigo[i][0]);
+            stringDesencriptado= stringDesencriptado.replaceAll(matrizCodigo[i][1], matrizCodigo[i][0]);
             }
         }
         return stringDesencriptado;
     }
+
