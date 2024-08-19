@@ -3,115 +3,99 @@
 
 
 *{
-    box-sizing: border-box;
-    font-family: "Inter", sans-serif;
-    padding:0;
-    margin:0;
+  font-family: "Inter", sans-serif;
+  padding:0;
+  margin:0;
 }
 body {
   background: #F3F5FC;
-  font-size: 16px;
+  /* font-size: 16px; */
   line-height: 1.5;
-
-  }
-
+}
   .logo{
 
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 40px;
+    left: 40px;
     display: flex;
-    flex-direction: row;
-    width: 60px;  
+    width: 120px;  
+    height: 48px;
+    gap:40px;
   }
-
   .presentacion{
-    /* position: absolute; */
     display: flex;
     align-items: center;
-    /* padding: 6%; */
-    justify-content: space-between;
-    flex-direction: row;
-    
-}
-
+    justify-content: space-around; 
+  }
   .presentacion_contenido{
-   
-    width:100%;
     display:flex;
     flex-direction: column;
-    margin-left: 4.5rem;
-    margin-top: 5rem;
-    /* gap:60px; */
-   
-    
+    margin-left: 240px;
+    margin-top: 80px;
+    width:100%;    
   }
- 
-
   .presentacion_texto{
     border:none;
-    margin-left: 10px;
-    top: 0px;
-    padding-left: 20px;
-    width: 860px;
+    width: 680px;
     height: 420px;
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 400;
     outline: 0;
     background-color: transparent;
-    text-transform: lowercase;
+    /* text-transform: lowercase; */
     cursor: pointer;
     color: #0A3871;
-    font-family: 'Inter', sans-serif;
-    margin:0;
-    /* padding: 12.5rem; */
-    
+    resize: none; 
   }
   .presentacion_texto::placeholder{
     color:#0A3871;
   }
-  .presentacion_texto.focus{
-    outline:none;
-  }
- 
   .presentacion_alerta{
-    width: 66.406%;
-    display: flex;
-    flex-direction: row;
-    top: 750px;
-    margin-left: 10px;
-    color: ·#737980;
+    display: flex;  
+    height: 18px;
+
     
+  }
+  .icono_advertencia{
+    width: 16px;
+    height: 16px;
+    color: #495057;
+
   }
   .mensaje_advertencia{
-    font-family: "Inter", sans-serif;
-    font-size:0.75rem;
-    font-weight:600;
-    margin-left: 20px;
-   
- 
-    
+    width: 230px;
+    height: 18px;
+    opacity: 80%;
+    font-size:12px;
+    margin-left: 8px;
+    color: #495057;
+    line-height: 18px;    
   }
   .presentacion_botones{
     display:flex;
-    justify-content: space-around;
-    top: 800px;
-    height: 80px;
-    padding-left: 10px;
-    padding-top: 15px;
+    width: 680px;
+    height: 67px;
+    margin-top: 16px;
+
   }
-  .boton_encriptar{
+  .boton_encriptar,
+  .boton_desencriptar {
     width: 328px;
     height: 67px;
-    background-color: #0A3871;
     text-align: center;
     border-radius: 24px;
-    font-family: "Inter", sans-serif;
     font-size: 16px;
     font-weight: 400;
-    color:#ffffff;
     border:2px solid #718BAC;
     cursor: pointer;
     
   }
+  .boton_encriptar {
+    background-color: #0A3871;
+    color: #ffffff;
+  }
+
 
   .boton_encriptar:hover{
     background-color: #D8DFE8;
@@ -119,154 +103,132 @@ body {
 
   }
   .boton_desencriptar{
-    margin-left: 1.5rem;
-    width: 328px;
-    height: 67px;
     background-color: #D8DFE8;
-    text-align: center;
-    border-radius: 24px;
-    font-family: "Inter", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
     color:#57769D;
-    border:2px solid #718BAC;
-    cursor: pointer;
+    margin-left: 24px;
   }
 
   .boton_desencriptar:hover{
     background-color: #ffffff;
 
   }
- .presentacion_rectangulo{
+ .presentacion_rectangulo,.presentacion_rectangulo_resultado{
     background-color:#ffffff;
     width: 400px;
-    height: 750px;
-    right: 400px;
-    padding:20px;
-    box-sizing: border-box;
+    height: 744px;
+    margin: 40px 40px 40px 80px;
+    padding:32px;
     border-radius: 32px;
-    box-shadow: 0px 24px 32px 8px rgb(0, 0, 0, 0.50);
-
+    box-shadow: 0px 24px 32px 8px rgb(0, 0, 0, 0.10);
     display:flex;
-
-    justify-content:center;
     flex-direction: column;
-   
-    /* gap: 2rem; */
+    align-items: center;
+
+  }
+  .presentacion_rectangulo{
+    justify-content:center;
+  }
+  .mostrar {
+    display: flex; 
+  }
+  .imagen{
+    margin-bottom: 32px;
  
-    
-    margin:1rem 1rem 1rem 3rem;
-  
+  }
+  .presentacion_rectangulo_texto,.mensaje,.copiar {
+    width: 336px;
   }
 
-  .presentacion_rectangulo_resultado{
-    
-    width: 39.06%;
-    height: 46.25rem;
-    justify-content:center;
-    flex-direction: column;
-    align-items:center;  
-    gap:2rem;
-    padding:0% 5%;
-   border-radius: 1.5rem;
-    margin: 2.5rem 2.5rem 2.5rem 5rem;
-    display: none;
-  }
- 
-  
 
-  .imagen_rectangulo{
-    width: 100%;
-    height: 100%;
-    display:flex;
-    align-items:center; 
-    justify-content:center;
-    flex-direction: column;
-  }
   .presentacion_rectangulo_texto{
-    box-sizing: border-box;
-    top: 570px;
-    left: 40px;
+    height: 122px;
+    gap: 16px;
+
   }
   h3{
     font-size: 24px;
     font-weight: 700;
-    font-family: 'Inter', sans-serif;
     text-align: center;
     color: #343A40;
+    line-height: 28.8px;
   }
   p{
-    font-family: "Inter", sans-serif;
     font-size:16px;
     font-weight:400;
     text-align: center;
     color: #495057;
-    padding-top: 20px;
-    
+    line-height: 24px;
+    margin-top: 16px;
   }
 
+
   .mensaje{
-    width: 100%;
+    height: 647px;
     display:flex;
     align-items:center; 
     justify-content:center;
     flex-direction: column;
     cursor: text;
- 
+    resize: none;
+    border: none;
+    font-size:24px;
+    line-height: 36px;
+    font-weight: 400;
+
+    
   }
   .mensaje:focus{
     outline: none;
   }
-
   .copy{
     display:flex;
     justify-content: space-around;
-    bottom:300px;
-    top: 300px;
 
-
- 
+  
   }
   .copiar{
-    
-    width: 328px;
     height: 67px;
     border-radius: 24px;
     background-color: #ffffff;
-    color:#476A94;
+    color:#0A3871;
     font-size: 16px;
     font-weight: 400;
-    font-family: "Inter", sans-serif;
-    border:2px solid #476A94;
+    border:1px solid #0A3871;
     cursor: pointer;
-    /* position: relative; */
-    top: 100px;
-    right: 4px;
-
-    /* text-align: center; */
-        
+    line-height: 19.36px;
+    margin-top: 32px;   
+    
   }
 
   .copiar:hover{
-    background-color: #D8DFE8;
-    color:#4030b6b0;
+    background-color: #0A3871;
+    color:#ffffff;
 
+  }
+  .ocultar{
+    display: none; 
   }
  
   .footer{
     background-color: #11014b;
-    color:rgb(255, 255, 255);
-    text-align: center;
-    font-family: "Inter", sans-serif;
-    font-size: 0.65rem;
+    color: #ffffff;  
+    font-size: 10px;
     font-weight: 300;
-    height: 60px;
+    width: 100%;
+    height: 40px;
     display:flex;
     align-items:center; 
     justify-content:center;
-    flex-direction: row;
+    gap: 7px;
+  }
+  h4{
+    font-size: 10px;
+    font-weight: 200;
+    color: #ffffff;  
+   
   }
 
+/* 
   @media (max-width: 1250px) {
     .presentacion{
       flex-direction: column;
@@ -283,47 +245,178 @@ body {
       display: none;
     }
  
-  }
+  } */
   @media (max-width: 768px) {
     body {
-        font-size: 14px;
+      background-color: #F3F5FC;
+      margin-left:40px;
+      margin-right:40px;
+      
     }
     .logo {
-        top: 0.5rem;
-        left: 0.5rem;
+        width:31.09px; 
+        height: 50.58px;
+        top: 73.42px;
+        left:0px;
+        gap:0px;
+  
     }
-    .presentacion_texto {
-        padding: 4rem;
-    }
-    .presentacion_rectangulo, .presentacion_rectangulo_resultado {
-        width: 100%;
-        height: auto;
-        margin: 2rem 0;
-      }
-   
-    .imagen_rectangulo{
-      display: none;
-    }
-  }
-  @media (max-width: 480px) {
-    body {
-        font-size: 12px;
-        margin: 0.5px;
-    }
-    .logo {
-        top: 0.25rem;
-        left: 0.25rem;
-    }
+
     .presentacion {
-        padding: 2%;
+      flex-direction: column;
+    
+     
+  }
+  
+    .presentacion_contenido{
+      margin-top: 189.42px;
+      margin-left: 0px;
+       
     }
-    .presentacion_contenido_titulo {
-        font-size: 1.5rem;
-      }
-      .presentacion_texto {
-          padding: 2rem;
-      }
-      .imagen_rectangulo{
-        display: none;
-      }
+    .presentacion_texto,
+    .presentacion_botones,
+    .presentacion_rectangulo,
+    .presentacion_rectangulo_resultado,
+    .mensaje,
+    .copiar { 
+      width: 688px;
+    }
+
+    .presentacion_texto{
+      height: 600px;
+      /* margin-left: 40px; */
+    }
+    
+    .presentacion_alerta{
+     
+    }
+    .mensaje_advertencia{    
+      margin-left: 8px; 
+    }
+    .presentacion_botones{  
+    
+      margin-left: 0px; 
+     
+    }
+    .boton_encriptar,
+    .boton_desencriptar{
+      width: 332px;
+      border:1px solid #0A3871;
+    }
+    .presentacion_rectangulo,
+    .presentacion_rectangulo_resultado {
+        margin-left: 0px;
+        margin-right: auto;
+        height: 133px;
+        padding: 0px;
+    }
+    .presentacion_rectangulo{ 
+      margin-top: 64px;   
+      margin-left: 0px;
+
+      height: 133px;
+      padding:0px;
+
+    }
+    .presentacion_rectangulo_texto,.mensaje,.copiar {
+      gap:0px;
+      width: 624px;
+      height: 69px;
+    }
+    .presentacion_rectangulo_resultado{
+      margin-top: 20px;
+
+      height: 343px;
+      gap:32px;
+      
+    }
+    .mensaje{
+      height: 180px;
+      font-size: 24px;
+    }
+    /* la imagen se debe cambiar por la caja de mensaje */
+    .imagen, .footer{
+      display:none;
+    }
+}
+
+  @media (max-width: 375px) {
+
+    .logo {
+        width: 32px;
+        height: 48px;
+    }
+    .presentacion_texto, .presentacion_botones, .boton_encriptar, .boton_desencriptar, .presentacion_rectangulo_resultado, .copiar {
+      width: 343px;
+    }
+    .presentacion_texto{
+      height: 48px;
+      top: 152px;
+      left: 16px;
+    
+    }
+    .presentacion_alerta{
+      top: 451px;
+      left: 16px;
+    }
+   
+    .mensaje_advertencia{
+      height: 18px;
+    }
+
+  
+
+    .presentacion_botones{
+      flex-direction: column;
+      width: 343px;
+      height: 158px;
+      top:485px;
+      left:16px;
+      gap:24px;
+    }
+    .boton_encriptar,.boton_desencriptar{
+      width: 343px;
+      line-height: 19.36px;
+       
+    }
+
+    .boton_desencriptar{
+      margin-left: 0;
+    }
+    .presentacion_rectangulo{
+      width: 327px;
+      height: 186px;
+
+    }
+    .presentacion_rectangulo_texto{
+      width: 263px;
+      height: 122px;
+      gap: 16px;
+  
+    }
+
+    .presentacion_rectangulo_resultado{
+      height: 595px;
+      top:1096px;
+      left:16px; 
+    }
+    .mensaje{
+      width: 279px;
+      height: 432px;
+    }
+    .copy{
+      margin: 32px;
+
+    }
+    
+    .copiar{
+      width: 279px;
+      height: 67px;
+
+
+    } 
+
+    .imagen, .footer{
+      display:none;
+  }
   }
