@@ -18,6 +18,7 @@ body {
   display: flex;
   flex-direction: column;
 }
+
   .logo{
     position: absolute;
     margin-top: 3.91%;
@@ -121,7 +122,7 @@ body {
   width: 27.78%;
   /* height: 100%; */
   max-height: 80vh;
-  margin: 3% 2.78% 3.17% 5.56%;
+  margin: 3% 2.78% 2.78% 5.56%;
   padding: 3.39%;
   border-radius: 32px;
   box-shadow: 0px 24px 32px 8px rgb(0, 0, 0, 0.10);
@@ -194,7 +195,7 @@ body {
 
   .mensaje{
     width: 100%;
-    max-height: calc(65vh - 3.39% - 1.5rem);
+    max-height: calc(60vh - 3.39% - 1.5rem);
     overflow-x: hidden;
     overflow-y: auto;
     resize: none;
@@ -239,7 +240,7 @@ body {
     display: none; 
   }
  
-  .footer{
+  footer{
     background-color: #11014b;
     color: #ffffff;  
     width: 100%;
@@ -255,4 +256,219 @@ body {
     color: #ffffff;  
    
   }
-  
+
+
+@media (max-width: 768px) {
+  html {
+    font-size: 14px; /* Reducir el tamaño base de la fuente */
+  }
+
+  body {
+    font-size: 0.875rem;
+    padding:5.21%;
+    font-size: 14px;
+  }
+    .logo {
+      width: 4.05%;
+      height: 3.95%;
+      margin-top: 1.04%;
+      /* position: ; */
+    }
+    /* .logo_alura{
+      width: 3.04%;
+      height: 6.59%;
+
+    } */
+    
+    .presentacion {
+      display: flex;
+      flex-direction: column;
+      padding: 2.73%;
+      justify-content: flex-start; /* Cambiado a flex-start */
+      flex: 1;
+     }
+
+    .presentacion_contenido {
+      width: 100%;
+      /* height: auto; */
+      margin-top: 17.04%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start; /* Ajustado a flex-start */
+      flex-grow: 1; /* Para que crezca y ocupe el espacio disponible */
+    }
+    
+    .presentacion_texto{
+      margin-top: 0;
+      margin-left:0;  
+      width: 100%;
+
+    }
+ 
+    .presentacion_alerta{
+    
+      height: 1.53%;
+      margin-top: 1.36%;  
+      margin-left: 0;
+      margin-bottom: 1.36%;
+     }
+    .mensaje_advertencia{
+      margin-left: 1.04%;
+     
+    }  
+    .presentacion_botones{
+      display: flex;
+      justify-content:space-around;
+      width: 100%;
+      height: 5.71%;
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 5.45%;
+    }
+    .boton_encriptar,
+    .boton_desencriptar {
+      width: 48%;
+      height: 100%;
+
+      
+    }
+
+    .presentacion_rectangulo{
+      width: 100%;
+      height: 11.33%;
+      margin: 0;
+      padding: 2.73%;   
+    }
+    .imagen, footer{
+      display: none;
+    }
+    .presentacion_alerta{
+
+      height: 1.53%;
+   
+      margin-bottom: 1.36%;
+     }
+    .presentacion_rectangulo_texto{
+      width: 81.25%;
+      height: 5.88%;
+      margin-bottom: 0;
+
+    }
+    .presentacion_rectangulo_resultado {
+      width: 100%;
+      max-height: calc(80vh-5.71%);
+      margin: 0;
+      padding: 2.73%;   
+      gap: 3.39%;
+  }
+}
+@media (max-width: 375px) {
+  html {
+    font-size: 12px; /* Reducir aún más el tamaño base de la fuente */
+  }
+
+  body {
+    font-size: 0.75rem;
+    margin: 0;
+    padding:0;
+  }
+  header{
+    width: 100%;
+    height:10.29%;
+    margin:0;
+   }
+   .logo{
+    /* width: 8.53%;
+    height: 5.14%;
+    margin-top: 1.71%;
+    margin-left: 4.27%;
+
+   } */
+ 
+  .presentacion {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    justify-content: flex-start; /* Cambiado a flex-start */
+    flex: 1;
+  }
+  .presentacion_contenido {
+    width: 100%;
+    height: auto; 
+    margin-top: 16.29%;
+    
+  }
+  .presentacion_texto{
+    margin:16.29% 4.27% 0% 4.27%;
+    width: 91.47%;
+    
+  }
+  .presentacion_alerta{
+    height: 1.93%;
+    margin-top: 1.71%;  
+    margin-bottom: 1.71%;
+    margin-left: 4.27%;
+  }
+  .presentacion_botones{
+    display: flex;
+    flex-direction: column;
+    width: 91.47%;
+    height: 16.93%;
+    margin-left: 4.27%;
+    margin-right: 4.27%;
+    gap:2.57%;
+  }
+  .boton_encriptar,
+  .boton_desencriptar {
+    width: 100%;
+    height: 7.18%;
+    margin:0;             
+  }
+      
+  .presentacion_rectangulo {
+    width: 87.20%;
+    height: 19.94%;
+    margin: 6.86% 6.40% 4.29% 6.40%;
+    gap: 1.71%; 
+  }
+  .imagen, footer {
+    display: none;
+  }
+
+  .presentacion_rectangulo_texto{
+    width: 70.13%;
+    height: 13.08%;
+    margin: 8.53% 3.43% 8.53% 3.43%;
+    gap: 1.71%;
+  }
+  h3{
+    width: 100%;
+    height: 6.22%;
+    margin-bottom: 1.39%;
+ 
+  }
+  p{
+    width: 100%;
+    height: 5.14%;
+  }
+  .presentacion_rectangulo_resultado {
+    width: 91.47%;
+    /* height: 34.69%; */
+    margin-left: 4.27%;
+    margin-right: 4.27%;
+    margin-bottom: 2.57%;
+    max-height: calc(80vh-5.71%);
+    padding: 5%;   
+   
+  }
+  .copy{
+
+    display: flex;
+    justify-content: center;
+    height: 3.91%;
+    margin-top:1.87%;   
+  }
+}
+        
+
+
