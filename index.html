@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,48 +11,49 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
     <title>Encriptador</title>
 </head>
+
 <body>
     <header>
         <nav>
             <a href="https://www.aluracursos.com/">
                 <img class="logo" src="/assets/Logo (1).png" alt="logo alura">
-            </a> 
-         </nav>     
+            </a>
+        </nav>
     </header>
     <main class="presentacion">
-        
-        <section class="presentacion_contenido">
-            
-                
-                <textarea class="presentacion_texto" placeholder="Ingrese el texto aqui:"></textarea>
-                
-                <div class="presentacion_alerta">
-                    <img class="icono_advertencia" src="./assets/bi_exclamation-circle-fill.png">
-                    <h6 class="mensaje_advertencia">
-                        Solo letras minusculas y sin caracteres
-                    </h6>
 
-                </div>
-                <div class="presentacion_botones">
-                    <button class="boton_encriptar" onclick="btnEncriptar()">Encriptar</button>
-                    <button class="boton_desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
-                </div>
+        <section class="presentacion_contenido">
+
+
+            <textarea class="presentacion_texto" placeholder="Ingrese el texto aqui:"></textarea>
+
+            <div class="presentacion_alerta">
+                <img class="icono_advertencia" src="./assets/bi_exclamation-circle-fill.png">
+                <h6 class="mensaje_advertencia">
+                    Solo letras minusculas y sin caracteres
+                </h6>
+
+            </div>
+            <div class="presentacion_botones">
+                <button class="boton_encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="boton_desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
         </section>
-        <section class="presentacion_rectangulo" >  
+        <section class="presentacion_rectangulo">
             <div>
-            <img class="imagen" src="./assets/Muñeco.png" alt="descifrando">
+                <img class="imagen" src="./assets/Muñeco.png" alt="descifrando">
             </div>
             <div class="presentacion_rectangulo_texto">
                 <h3>Ningún mensaje fue encontrado</h3>
                 <p>Ingrese el texto que desees encriptar o desencriptar</p>
             </div>
-        </section> 
-        <section class="presentacion_rectangulo_resultado">            
+        </section>
+        <section class="presentacion_rectangulo_resultado">
             <div class="mensaje">
-                <textarea  readonly></textarea>
+                <textarea readonly></textarea>
             </div>
             <div class="copy">
-                <button class="copiar" onclick="btnCopiar()">Copiar</button>  
+                <button class="copiar" onclick="btnCopiar()">Copiar</button>
             </div>
 
         </section>
@@ -65,7 +67,8 @@
             </a>
         </nav>
 
-    </footer>  
-    <script src="script.js"></script>  
+    </footer>
+    <script src="script.js"></script>
 </body>
+
 </html>

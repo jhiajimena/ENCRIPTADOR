@@ -6,7 +6,7 @@ var resultado = document.querySelector(".mensaje");
 var rectangulo = document.querySelector(".presentacion_rectangulo");
 var rectanguloResultado = document.querySelector(".presentacion_rectangulo_resultado");
 
-window.onload = function() {
+window.onload = function () {
     rectanguloResultado.classList.add("ocultar");
 };
 
@@ -18,7 +18,7 @@ function recuperarTexto() {
     let caracteresPermitidos = /^[a-z\s]+$/;
     if (!caracteresPermitidos.test(texto)) {
         alert("El texto ingresado no es válido. Solo se permiten letras minúsculas y espacios.");
-        return ""; // Retorna un string vacío si el texto no es válido
+        return "";
     }
 
     return texto;
@@ -51,7 +51,7 @@ function ocultarAdelante() {
 function encriptarTexto(stringEncriptado) {
     let matrizCodigo = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
     stringEncriptado = stringEncriptado.toLowerCase();
-    
+
     for (let i = 0; i < matrizCodigo.length; i++) {
         if (stringEncriptado.includes(matrizCodigo[i][0])) {
             stringEncriptado = stringEncriptado.replaceAll(matrizCodigo[i][0], matrizCodigo[i][1]);
@@ -63,7 +63,7 @@ function encriptarTexto(stringEncriptado) {
 function desencriptarTexto(stringDesencriptado) {
     let matrizCodigo = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
     stringDesencriptado = stringDesencriptado.toLowerCase();
-        
+
     for (let i = 0; i < matrizCodigo.length; i++) {
         if (stringDesencriptado.includes(matrizCodigo[i][1])) {
             stringDesencriptado = stringDesencriptado.replaceAll(matrizCodigo[i][1], matrizCodigo[i][0]);
@@ -83,14 +83,14 @@ btnCopiar.addEventListener("click", copiar = () => {
     selection.addRange(range);
 
     muneco.classList.remove("ocultar");
-   
+
 });
 function habilitarTexto() {
     contenedor.classList.remove("ocultar");
-    contenedor.disabled = false;  // Habilitar el cuadro de texto
-    contenedor.value = ""; // Limpiar el texto anterior
-    contenedor.placeholder = "Ingrese el texto aquí..."; // Añadir el placeholder
-    contenedor.focus(); // Poner el foco en el cuadro de texto
+    contenedor.disabled = false;
+    contenedor.value = "";
+    contenedor.placeholder = "Ingrese el texto aquí...";
+    contenedor.focus();
 }
 function mostrarRectangulo() {
     contenedor.classList.remove("ocultar");
