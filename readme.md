@@ -8,7 +8,7 @@ git push origin
 
 # Portfolio ¡Hola, bienvenido a mi proyecto Encripador!
 
-![Logo del proyecto](assets/encriptador.png)
+![imagen del proyecto](assets/encriptador.png)
 
 ## Herramientas utilizadas:
 
