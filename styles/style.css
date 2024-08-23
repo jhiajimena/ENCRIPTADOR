@@ -300,6 +300,7 @@ h4 {
     margin: 0;
     padding: 2.73%;
     overflow-x: hidden;
+    align-items: center;
   }
 
   .imagen,
@@ -380,6 +381,7 @@ h4 {
 
   .boton_desencriptar {
     margin-top: 10px;
+    margin-left: 0;
   }
 
   .presentacion_rectangulo {
@@ -387,6 +389,7 @@ h4 {
     height: 19.94%;
     margin: 1.5% 6.40% 4.29% 6.40%;
     gap: 1.71%;
+    align-items: center;
   }
 
   .presentacion_rectangulo_texto {
@@ -409,7 +412,7 @@ h4 {
     justify-content: center;
 
   }
-
+  .imagen,
   footer {
     display: none;
   }
