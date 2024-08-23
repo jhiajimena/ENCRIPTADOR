@@ -1,3 +1,5 @@
+git pull origin
+
 git status
 git add .
 git status
