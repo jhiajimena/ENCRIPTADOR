@@ -131,15 +131,15 @@ body {
 .presentacion_rectangulo {
   display: none;
   width: 27.78%;
-  max-height: 100vh;
+  height: 82vh;
   justify-content: center;
 }
 
 .presentacion_rectangulo_resultado {
   display: none;
   width: 27.78%;
-  max-height: 85vh;
-  min-height: 85vh;
+  max-height: 82vh;
+  min-height: 82vh;
   justify-content: space-between;
   overflow: hidden;
 }

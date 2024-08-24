@@ -5,6 +5,7 @@ var contenedor = document.querySelector(".presentacion_texto");
 var resultado = document.querySelector(".mensaje");
 var rectangulo = document.querySelector(".presentacion_rectangulo");
 var rectanguloResultado = document.querySelector(".presentacion_rectangulo_resultado");
+const btnCopiar = document.querySelector(".copiar");
 
 window.onload = function () {
     rectanguloResultado.style.display = "none";
@@ -73,7 +74,7 @@ function desencriptarTexto(stringDesencriptado) {
     return stringDesencriptado;
 }
 
-const btnCopiar = document.querySelector(".copiar");
+
 btnCopiar.addEventListener("click", copiar = () => {
     var contenido = document.querySelector(".mensaje").textContent;
     navigator.clipboard.writeText(contenido);
