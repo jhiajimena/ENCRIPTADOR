@@ -42,7 +42,6 @@ La interfaz es intuitiva y fácil de usar, lo que lo hace ideal tanto para princ
 
 ## **Ejemplo de uso**
 
-``plaintext
 :heavy_check_mark: `Entrada`: hola mundo
 :heavy_check_mark: `Encriptado`: hoberlai mufatndober
 :heavy_check_mark: `Desencriptado`: hola mundo
@@ -68,10 +67,12 @@ La interfaz es intuitiva y fácil de usar, lo que lo hace ideal tanto para princ
 
 ## Hecho por:
 
-:rabbit:### Pamela Lescano
+:rabbit: ### Pamela Lescano
 
-### Linkedin: www.linkedin.com/in/pamela-lescano-vila
+### Redes Sociales:
+![linkedin](assets/linkedin.png)
+Linkedin: www.linkedin.com/in/pamela-lescano-vila
 
-
+### Agradecimiento
 ![alura](assets/logo-aluraespanhol.png)
 ![one-education](assets/one.png)
