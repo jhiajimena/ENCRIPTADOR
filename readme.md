@@ -57,6 +57,7 @@ La interfaz es intuitiva y fácil de usar, lo que lo hace ideal tanto para princ
 * Flex-box
 
 ## **Responsivo:**
+
 `vista en Tablet`:
 ![tablet](assets/vista-encriptador-tablet.png)
 
@@ -69,8 +70,10 @@ La interfaz es intuitiva y fácil de usar, lo que lo hace ideal tanto para princ
 ### Pamela Lescano
 
 ### **Redes Sociales:**
+
 ![linkedin](assets/linkedin.png)
 Linkedin: www.linkedin.com/in/pamela-lescano-vila
 
 ### **Agradecimiento**
+
 ![alura](assets/logo-aluraespanhol.png) y ![one-education](assets/one.png)
