@@ -64,13 +64,13 @@ La interfaz es intuitiva y fácil de usar, lo que lo hace ideal tanto para princ
 ![Celular](assets/vista-encriptador-celular.png)
 
 
-## Hecho por:
+## **Hecho por:**
 
 ### Pamela Lescano
 
-### Redes Sociales:
+### **Redes Sociales:**
 ![linkedin](assets/linkedin.png)
 Linkedin: www.linkedin.com/in/pamela-lescano-vila
 
-### Agradecimiento
+### **Agradecimiento**
 ![alura](assets/logo-aluraespanhol.png) y ![one-education](assets/one.png)
