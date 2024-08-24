@@ -7,7 +7,8 @@ var rectangulo = document.querySelector(".presentacion_rectangulo");
 var rectanguloResultado = document.querySelector(".presentacion_rectangulo_resultado");
 
 window.onload = function () {
-    rectanguloResultado.classList.add("ocultar");
+    rectanguloResultado.style.display = "none";
+    rectangulo.style.display = "flex";
 };
 
 botonEncriptar.onclick = encriptar;
@@ -43,9 +44,9 @@ function desencriptar() {
 }
 
 function ocultarAdelante() {
-    muneco.classList.add("ocultar");
-    rectangulo.classList.add("ocultar");
-    rectanguloResultado.classList.remove("ocultar");
+    muneco.style.display = "none";
+    rectangulo.style.display = "none";
+    rectanguloResultado.style.display = "flex";
 }
 
 function encriptarTexto(stringEncriptado) {

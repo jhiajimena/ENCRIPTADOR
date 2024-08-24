@@ -65,7 +65,7 @@ body {
   height: 1.76%;
 }
 .icono_advertencia{
-  width: 2%;
+  width: 3%;
 }
 .mensaje_advertencia {
   opacity: 80%;
@@ -129,12 +129,14 @@ body {
 }
 
 .presentacion_rectangulo {
+  display: none;
   width: 27.78%;
   max-height: 100vh;
   justify-content: center;
 }
 
 .presentacion_rectangulo_resultado {
+  display: none;
   width: 27.78%;
   max-height: 85vh;
   min-height: 85vh;
@@ -236,10 +238,9 @@ h4 {
   font-size: 0.625rem;
   font-weight: 200;
   color: #ffffff;
-
 }
 
-@media (min-width: 376px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 768px) {
   html {
     font-size: 14px;
   }
@@ -256,7 +257,6 @@ h4 {
   .presentacion {
     flex-direction: column;
     padding: 2.73%;
-
   }
 
   .presentacion_contenido {
@@ -272,6 +272,7 @@ h4 {
     height: 53vh;
     margin: 0;
     font-size: 1.25rem;
+    line-height: 24px;
   }
 
   .presentacion_alerta {
@@ -281,7 +282,6 @@ h4 {
 
   .mensaje_advertencia {
     margin-left: 1.04%;
-
   }
 
   .presentacion_botones {
@@ -314,7 +314,6 @@ h4 {
     width: 81.25%;
     height: 5.88%;
     margin-bottom: 0;
-
   }
 
   .presentacion_rectangulo_resultado {
@@ -323,15 +322,15 @@ h4 {
     max-height: calc(80vh-5.71%);
     margin: 0;
     padding: 2.73%;
-
   }
 
   .mensaje {
     font-size: 1.25rem;
+    line-height: 20px;
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 480px) {
   html {
     font-size: 12px;
   }
@@ -342,6 +341,7 @@ h4 {
 
   .logo {
     width: 15%;
+    margin-left: 0;
   }
 
   .presentacion {
@@ -358,7 +358,7 @@ h4 {
   .presentacion_texto {
     width: 91.47%;
     margin: 5% 4.27% 0 4.27%;
-    min-height: 400px;
+    min-height: 250px;
     font-size: 1.25rem;
   }
 
@@ -389,13 +389,13 @@ h4 {
   .presentacion_rectangulo {
     width: 87.20%;
     height: 19.94%;
-    margin: 1.5% 6.40% 4.29% 6.40%;
+    margin: 4.5% 6.40% 4.29% 6.40%;
     gap: 1.71%;
     align-items: center;
   }
 
   .presentacion_rectangulo_texto {
-    width: 70.13%;
+    width: 80%;
     height: 13.08%;
     margin: 8.53% 3.43%;
     gap: 1.71%;
@@ -403,10 +403,14 @@ h4 {
 
   .presentacion_rectangulo_resultado {
     width: 87.20%;
-    min-height: 22vh;
-    max-height: calc(40vh-5.71%);
-    margin: 1.5% 6.40% 4.29% 6.40%;
+    min-height: 27vh;
+    max-height: calc(30vh- 5.71%);
+    margin: 4.5% 6.40% 4.29% 6.40%;
     justify-content: space-between;
+  }
+  .mensaje{
+    font-size: 1.15rem;
+    margin-left: 2%;
   }
 
   .copiar {
