@@ -16,9 +16,6 @@ Este proyecto te permite encriptar y desencriptar mensajes utilizando un sencill
 
 ![GitHub Org's stars](https://img.shields.io/github/stars/camilafernanda?style=social)
 
-
-
-
 ## :cop: **Descripción del Proyecto**
 
 Este encriptador de texto está diseñado para transformar mensajes utilizando un conjunto de reglas específicas.
@@ -65,15 +62,13 @@ La interfaz es intuitiva y fácil de usar, lo que lo hace ideal tanto para princ
 ![Celular](assets/vista-encriptador-celular.png)
 
 
-## **Hecho por:**
+## **Hecho por**
 
 ### Pamela Lescano
-
-### **Redes Sociales:**
 
 ![linkedin](assets/linkedin.png)
 Linkedin: www.linkedin.com/in/pamela-lescano-vila
 
-### **Agradecimiento**
+## **Agradecimiento:**
 
 ![alura](assets/logo-aluraespanhol.png) y ![one-education](assets/one.png)
