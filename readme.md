@@ -58,23 +58,23 @@ La interfaz es intuitiva y fácil de usar, lo que lo hace ideal tanto para princ
 
 ## **Responsivo:**
 `vista en Tablet`:
-
+<p align="center">
 ![tablet](assets/vista-encriptador-tablet.png)
-
+</p>
 `vista en Celular`:
-
+<p align="center">
 ![Celular](assets/vista-encriptador-celular.png)
-
+</p>
 
 
 ## Hecho por:
 
-:rabbit: ###Pamela Lescano
+:rabbit: ### Pamela Lescano
 
 ### Redes Sociales:
-![linkedin](assets/linkedin.png)Linkedin: www.linkedin.com/in/pamela-lescano-vila
+![linkedin](assets/linkedin.png)
+Linkedin: www.linkedin.com/in/pamela-lescano-vila
 
 ### Agradecimiento
 ![alura](assets/logo-aluraespanhol.png)
-
 ![one-education](assets/one.png)
