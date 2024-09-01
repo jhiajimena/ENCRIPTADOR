@@ -1,7 +1,7 @@
 
 <h1 align="center">
 <em>
-¡Hola, bienvenido a mi proyecto Encripador! </em>
+¡Hola, bienvenido a mi proyecto Encriptador! </em>
 </h1>
 
 # :name_badge: **Encriptador de Texto**
@@ -71,4 +71,4 @@ Linkedin: www.linkedin.com/in/pamela-lescano-vila
 
 ## **Agradecimiento:**
 
-![alura](assets/logo-aluraespanhol.png) y ![one-education](assets/one.png)
+![alura](assets/logo-aluraespanhol.png)     ![one-education](assets/one.png)
